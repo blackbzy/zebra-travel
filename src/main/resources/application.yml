@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.17.128:3306/day19_heima_travel?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  mail:
+    #配置163邮箱信息
+    host: smtp.163.com
+    username: xsitheima163@163.com
+    password: XWGVYEQEABRJRELQ
+    default-encoding: utf-8
+    properties:
+      mail.smtp.auth: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+
+server:
+  port: 8082
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
